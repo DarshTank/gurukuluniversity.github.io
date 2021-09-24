@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    background: url(bulding.jpg);
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.menu-area{
+    background: #262626;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    line-height: 50px;
+    margin-left: 4%;
+    padding: 15px;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.shh{
+    line-height: 0;
+    margin-left: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-area ul{
+    margin-right: 7%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-area ul li{
+    padding: 20px;
+    line-height: 50px;
+    position: relative;
+    list-style: none;
+}
+
+.menu-area ul li a{
+    font-size: 18px;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+}
+
+.menu-area ul li a:hover{
+    color: aqua;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.contact .content .h2{
+    font-size: 80px;
+    font-weight: 800;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactinfo .box .text{
+    display: flex;
+    margin: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactform{
+   width: 40%;
+   padding: 40px;
+   background: #fff; 
+}
+
+.contactform .go{
+    font-size: 38px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.div-area p{
+    margin-bottom: 0;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 0;
+    background: #262626;
+    text-align: center;
+}
+
+.div-area p a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: poppins;
+    color: #fff;
+}
+
+.low:hover{
+    transform: rotateX(360deg);
+}
+
+@media (max-width: 991px)
+{
+    .content{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}
